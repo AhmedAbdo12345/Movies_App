@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="Popularity">Popularity</string>
+    <string name="Rate">Rate</string>
+    <string name="Favourite">Favourite</string>
+
+    <string name="save_successfully">save successfully</string>
+    <string name="error_saved_before">error the movie saved before</string>
+    <string name="Delet_successfully">Delet successfully</string>
+    <string name="error_Delete_before">error the movie Delete before</string>
+
+    <string name="Click_HomeButton_TO_Exit">Please Click The Home Button TO Exit</string>
+    <string name="Sorted_Popularity">Sorted By Popularity</string>
+    <string name="Sorted_Rate">Sorted By Rate</string>
+    <string name="Sorted_Favourite">Sorted By Favourite</string>
+
+    <string name="loadDatasuccefuly">load live data succefuly</string>
+
+    <string name="FavouriteButton">FavouriteButton</string>
+    <string name="UnFavouriteButton">UnfavouriteButton</string>
+
+<!--////////////activity details.xml////////////////////////-->
+    <string name="original_title">original title</string>
+    <string name="ReleaseDate">ReleaseDate</string>
+    <string name="vote_count">vote count</string>
+    <string name="overview">overview</string>
+
+    <!--////////////activity Splash_Screen.xml////////////////////////-->
+    <string name="progress_par_counter">0 %</string>
+
+    <!--////////////Trailor_show_movies.xml////////////////////////-->
+    <string name="Trailor_Button">Trailor</string>
+
+    <!--////////////Reviews_show_movies.xml////////////////////////-->
+    <string name="Reviews_Button">Reviews</string>
+
+
+
+
+
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:shadowDx="10"
+                        android:shadowDy="10"
+                        android:shadowRadius="15"
+                        android:textColor="#000"
+                        android:shadowColor="#A5ACAC"
+                        android:text="@string/original_title"
+                        android:textSize="25sp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/Image"
+                            android:layout_width="200dp"
+                            android:layout_height="250dp"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="5dp"
+                            android:elevation="5sp"
+                            android:contentDescription="@string/app_name"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/releaseData"
+                                android:layout_width="wrap_content"
+                                android:layout_height="41dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:text="@string/ReleaseDate"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:id="@+id/vote_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="41dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="15dp"
+                                android:text="@string/vote_count"
+                                android:textSize="22sp" />
+                            <ImageButton
+                                android:id="@+id/imageButton"
+                                android:contentDescription="@string/FavouriteButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="15dp"
+                                android:onClick="favouritbutton"
+                                app:srcCompat="@android:drawable/star_on" />
+
+
+                            <ImageButton
+                                android:id="@+id/unfavouriteButton"
+                                android:contentDescription="@string/UnFavouriteButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="15dp"
+                                app:srcCompat="@android:drawable/star_off"
+                                android:onClick="UNfavouritbutton"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f3f3f3"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/overview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#000"
+                            android:text="@string/overview"
+                            android:textSize="22sp" />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"  >
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/trailorMovies"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:padding="5dp"
+                                tools:listitem="@layout/trailor_show_movies"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"  >
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/reviewMovies"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="50dp"
+
+                                android:padding="5dp"
+                                tools:listitem="@layout/reviews_show_movies"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+</LinearLayout>
